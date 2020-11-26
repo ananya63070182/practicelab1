@@ -24,8 +24,7 @@
             <div class="row">
                 <table class="col-lg-9 col-md-9 col-sm-12">
                     <div class="row">
-                        <div class="col-lg-9 col-md-9 col-sm-12"><h1 class="text-monospace">DATA</h1>
-                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12"><h1 class="text-monospace">DATA</h1></div>
                     </div>
                     <table class="table-responsive"></table>
                     <table class="table table-bordered table-dark" style="width: 900;">
