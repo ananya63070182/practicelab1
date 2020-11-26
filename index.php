@@ -46,7 +46,7 @@
                                 <td><?php echo $Result['Name'];?></td>
                                 <td><?php echo $Result['Comment'];?></td>
                                 <td><?php echo $Result['Link'];?></td>
-                                <td class="text-center"><button type="button" href="edit.php?ID=<?php echo $Result['ID'];?>" class="text-center btn btn-sm btn-success">EDIT</button><button type="button" href="delete.php?ID=<?php echo $Result['ID'];?>" class="text-center btn btn-sm btn-danger">DEL</button></td>
+                                <td class="text-center"><a href="edit.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-info mb-2 mb-md-0">EDIT</a> <a href="delete.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-danger">DEL</a></td>
                             </tr>
                             <?php
                                 }
