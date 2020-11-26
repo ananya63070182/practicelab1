@@ -23,13 +23,19 @@
         <div class="container">
             <div class="row">
                 <table class="col-lg-9 col-md-9 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-12"><h1 class="text-monospace">DATA</h1>
+                        </div>
+                    </div>
                     <table class="table-responsive"></table>
-                    <table class="table table-striped table-dark ">
+                    <table class="table table-bordered table-dark" style="width: 900;">
                         <thead>
                             <tr>
-                                <th class="text-center" scope="col">Name</th>
-                                <th class="text-center" scope="col">Comment</th>
-                                <th class="text-center" scope="col">Link</th>
+                                <div><a href="form.php" class="btn btn-info btn-sm font-weight-bold">ADD</a></div>
+                                <th class="text-center" style="width: 200px;">Name</th>
+                                <th class="text-center" style="width: 200px;">Comment</th>
+                                <th class="text-center" style="width: 300px;">Link</th>
+                                <th class="text-center" style="width: 200px;">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -41,6 +47,7 @@
                                 <td><?php echo $Result['Name'];?></td>
                                 <td><?php echo $Result['Comment'];?></td>
                                 <td><?php echo $Result['Link'];?></td>
+                                <td class="text-center"><button type="button" href="edit.php?ID=<?php echo $Result['ID'];?>" class="text-center btn btn-sm btn-success">EDIT</button><button type="button" href="delete.php?ID=<?php echo $Result['ID'];?>" class="text-center btn btn-sm btn-danger">DEL</button></td>
                             </tr>
                             <?php
                                 }
